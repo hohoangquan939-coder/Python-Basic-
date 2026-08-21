@@ -6,5 +6,12 @@ print(f"I'm passionate about programming and technology, and I enjoy learning ne
 def main():
     print(f"Thank you for reading my introduction!")
     print(f"I really enjoy learning coding")
+    print(f"I hope you have a great day!")
+
+def sum(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
 
 main()
