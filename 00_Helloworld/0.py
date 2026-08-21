@@ -22,7 +22,6 @@ def div(a, b):
         return "Error: Division by zero is not allowed."
     return a / b
 
-
 def tinhtien(a, b):
     return a * b
 
