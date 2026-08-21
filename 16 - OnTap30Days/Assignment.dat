@@ -1,0 +1,310 @@
+# ÔN PYTHON 15 NGÀY — GIỮ NHIỆT SYNTAX
+> Không học kiến thức mới. Chỉ ôn lại Bài 1-15 đã học. Mỗi ngày làm xong gửi lại, không cần làm hết nếu mệt.
+
+---
+
+## NGÀY 1 — List + Dict + String + Function
+
+**Bài 1.1 (List):** Viết hàm `loc_so_chan(mang)` nhận vào 1 list số nguyên, trả về list mới chỉ chứa số chẵn, giữ nguyên thứ tự.
+- Input: `[3, 8, 5, 12, 7, 4]`
+- Output: `[8, 12, 4]`
+
+**Bài 1.2 (Dict):** Viết hàm `dem_ky_tu(chuoi)` đếm số lần xuất hiện mỗi ký tự trong chuỗi (không tính khoảng trắng), trả về dict.
+- Input: `"hello world"`
+- Output: `{'h':1,'e':1,'l':3,'o':2,'w':1,'r':1,'d':1}`
+
+**Bài 1.3 (String):** Viết hàm `dao_nguoc_tu(cau)` đảo ngược thứ tự từng từ trong câu (không đảo ký tự trong từ).
+- Input: `"toi hoc python"`
+- Output: `"python hoc toi"`
+
+**Bài 1.4 (Function):** Viết hàm `tinh_giai_thua(n)` tính giai thừa dùng đệ quy (không dùng vòng lặp).
+- Input: `5`
+- Output: `120`
+
+**Bài 1.5 (List + Function, bonus):** Viết hàm `tim_2_so_lon_nhat(mang)` trả về tuple 2 số lớn nhất trong list (không dùng `sort`/`max` có sẵn 2 lần, thử tự viết logic duyệt).
+- Input: `[4, 1, 9, 3, 9, 7]`
+- Output: `(9, 9)`
+
+---
+
+## NGÀY 2 — List + Dict + File I/O
+
+**Bài 2.1 (List):** Viết hàm `gop_2_mang_khong_trung(a, b)` gộp 2 list, loại phần tử trùng, giữ thứ tự xuất hiện đầu tiên.
+- Input: `[1,2,3]`, `[2,3,4,5]`
+- Output: `[1,2,3,4,5]`
+
+**Bài 2.2 (Dict):** Viết hàm `tim_gia_tri_lon_nhat(d)` trả về key có value lớn nhất trong dict.
+- Input: `{"a":3, "b":9, "c":5}`
+- Output: `"b"`
+
+**Bài 2.3 (File I/O):** Viết chương trình đọc file `diem.txt` (mỗi dòng: `ten,diem`), tính điểm trung bình, ghi kết quả ra file `ketqua.txt` theo format `"Diem trung binh: X"`.
+- Input file mẫu:
+```
+An,8
+Binh,7.5
+Chi,9
+```
+- Output file: `Diem trung binh: 8.17`
+
+**Bài 2.4 (List + Dict):** Viết hàm `nhom_theo_do_dai(ds_tu)` nhận list các từ, trả về dict với key là độ dài từ, value là list các từ có độ dài đó.
+- Input: `["meo", "cho", "voi", "ga"]`
+- Output: `{3: ['meo','cho','voi'], 2: ['ga']}`
+
+**Bài 2.5 (String, bonus):** Viết hàm `kiem_tra_palindrome(chuoi)` kiểm tra chuỗi có phải palindrome không, bỏ qua khoảng trắng và không phân biệt hoa/thường.
+- Input: `"A man a plan a canal Panama"`
+- Output: `True`
+
+---
+
+## NGÀY 3 — Function + Exception + String
+
+**Bài 3.1 (Exception):** Viết hàm `chia_an_toan(a, b)` trả về `a/b`, nếu `b=0` thì bắt lỗi và trả về chuỗi `"Khong the chia cho 0"`.
+- Input: `10, 0`
+- Output: `"Khong the chia cho 0"`
+
+**Bài 3.2 (String):** Viết hàm `viet_hoa_dau_moi_tu(cau)` viết hoa chữ cái đầu mỗi từ (tự viết, không dùng `.title()`).
+- Input: `"chao ban toi la quan"`
+- Output: `"Chao Ban Toi La Quan"`
+
+**Bài 3.3 (Function + Exception):** Viết hàm `nhap_so_nguyen()` yêu cầu nhập liên tục cho tới khi nhập đúng số nguyên, dùng try/except bắt `ValueError`.
+- Input giả lập: `"abc"` → lỗi → `"12"` → hợp lệ
+- Output: in ra `"Nhap khong hop le, thu lai"` rồi `12`
+
+**Bài 3.4 (List + Function):** Viết hàm `tach_am_duong(mang)` trả về 2 list riêng: số âm và số dương (0 bỏ qua).
+- Input: `[3, -2, 0, 7, -8, 5]`
+- Output: `([-2, -8], [3, 7, 5])`
+
+**Bài 3.5 (String, bonus):** Viết hàm `nen_chuoi(chuoi)` nén chuỗi kiểu `"aaabbc"` → `"a3b2c1"`.
+- Input: `"aaabbc"`
+- Output: `"a3b2c1"`
+
+---
+
+## NGÀY 4 — List + Dict + File I/O + Exception
+
+**Bài 4.1 (Dict):** Viết hàm `dao_key_value(d)` đảo key thành value và ngược lại.
+- Input: `{"a":1, "b":2}`
+- Output: `{1:"a", 2:"b"}`
+
+**Bài 4.2 (List):** Viết hàm `xoay_mang(mang, k)` xoay phải mảng k vị trí.
+- Input: `[1,2,3,4,5], k=2`
+- Output: `[4,5,1,2,3]`
+
+**Bài 4.3 (File I/O + Exception):** Viết chương trình đọc file `data.txt`, nếu file không tồn tại thì bắt `FileNotFoundError` và in `"File khong ton tai"`, nếu có thì đếm số dòng.
+- Input: file không tồn tại
+- Output: `"File khong ton tai"`
+
+**Bài 4.4 (Function):** Viết hàm `so_nguyen_to_trong_khoang(a, b)` trả về list các số nguyên tố trong đoạn [a,b].
+- Input: `10, 30`
+- Output: `[11,13,17,19,23,29]`
+
+**Bài 4.5 (String, bonus):** Viết hàm `dem_nguyen_am(chuoi)` đếm số nguyên âm (a,e,i,o,u) không phân biệt hoa thường.
+- Input: `"Xin Chao Ban"`
+- Output: `4`
+
+---
+
+## NGÀY 5 — OOP: Class cơ bản (CHỈ 1 BÀI)
+
+**Bài 5.1:** Viết class `SanPham` có thuộc tính `ten`, `gia`, `so_luong`. Viết method `tinh_tong_tien()` trả về `gia * so_luong`, method `giam_gia(phan_tram)` giảm giá theo %.
+- Input: `SanPham("Ao", 100000, 3)`, gọi `tinh_tong_tien()` → `300000`
+- Sau `giam_gia(10)` → `gia = 90000`
+
+---
+
+## NGÀY 6 — List + String + Function
+
+**Bài 6.1 (List):** Viết hàm `tim_phan_tu_xuat_hien_nhieu_nhat(mang)` trả về phần tử xuất hiện nhiều nhất.
+- Input: `[1,3,2,3,3,1]`
+- Output: `3`
+
+**Bài 6.2 (String):** Viết hàm `kiem_tra_anagram(s1, s2)` kiểm tra 2 chuỗi có phải anagram của nhau không.
+- Input: `"listen", "silent"`
+- Output: `True`
+
+**Bài 6.3 (Function):** Viết hàm `fibonacci(n)` trả về list n số Fibonacci đầu tiên.
+- Input: `7`
+- Output: `[0,1,1,2,3,5,8]`
+
+**Bài 6.4 (List + Dict):** Viết hàm `dem_so_lan_xuat_hien(mang)` trả về dict đếm số lần mỗi phần tử xuất hiện trong list.
+- Input: `[1,2,2,3,1,1]`
+- Output: `{1:3, 2:2, 3:1}`
+
+**Bài 6.5 (String, bonus):** Viết hàm `xoa_ky_tu_trung(chuoi)` xóa ký tự trùng liên tiếp.
+- Input: `"aaabbbccd"`
+- Output: `"abcd"`
+
+---
+
+## NGÀY 7 — File I/O + Exception + List
+
+**Bài 7.1 (File I/O):** Viết chương trình ghi danh sách sinh viên (list dict `{ten, tuoi}`) ra file `, mỗi dòng 1 sinh viên format `ten - tuoi`.
+- Input: `[{"ten":"An","tuoi":20},{"ten":"Binh","tuoi":21}]`
+- Output file:
+```
+An - 20
+Binh - 21
+```
+
+**Bài 7.2 (Exception):** Viết hàm `lay_phan_tu(mang, idx)` trả về phần tử tại idx, bắt lỗi `IndexError` nếu vượt phạm vi, trả về `None`.
+- Input: `[1,2,3], idx=5`
+- Output: `None`
+
+**Bài 7.3 (List):** Viết hàm `tron_2_mang_da_sap_xep(a, b)` gộp 2 list đã sắp xếp tăng dần thành 1 list sắp xếp tăng dần (không dùng `sort()`).
+- Input: `[1,3,5], [2,4,6]`
+- Output: `[1,2,3,4,5,6]`
+
+**Bài 7.4 (Function):** Viết hàm `uoc_chung_lon_nhat(a, b)` tính UCLN bằng thuật toán Euclid.
+- Input: `48, 18`
+- Output: `6`
+
+**Bài 7.5 (String, bonus):** Viết hàm `chuyen_so_thanh_chu(so)` chuyển số 0-9 thành chữ (0→"khong", 1→"mot"...).
+- Input: `5`
+- Output: `"nam"`
+
+---
+
+## NGÀY 8 — OOP: Inheritance (CHỈ 1 BÀI)
+
+**Bài 8.1:** Viết class `NhanVien` (thuộc tính `ten`, `luong_co_ban`, method `tinh_luong()` trả về `luong_co_ban`). 
+Viết class `QuanLy(NhanVien)` kế thừa, thêm thuộc tính `phu_cap`, override `tinh_luong()` trả về `luong_co_ban + phu_cap`, dùng `super().__init__()`.
+- Input: `QuanLy("An", 10000000, 3000000)`, gọi `tinh_luong()`
+- Output: `13000000`
+
+---
+
+## NGÀY 9 — Dict + List + Exception
+
+**Bài 9.1 (Dict):** Viết hàm `gop_dict(d1, d2)` gộp 2 dict, nếu trùng key thì cộng dồn value.
+- Input: `{"a":1,"b":2}`, `{"b":3,"c":4}`
+- Output: `{"a":1, "b":5, "c":4}`
+
+**Bài 9.2 (List):** Viết hàm `sap_xep_theo_tan_suat(mang)` sắp xếp list theo tần suất xuất hiện giảm dần.
+- Input: `[1,1,2,3,3,3]`
+- Output: `[3,3,3,1,1,2]`
+
+**Bài 9.3 (Exception):** Viết hàm `chuyen_doi_an_toan(chuoi)` chuyển chuỗi thành số nguyên, nếu lỗi trả về `0`, dùng try/except.
+- Input: `"abc"`
+- Output: `0`
+
+**Bài 9.4 (Function + Dict):** Viết hàm `dem_tan_suat_tu(doan_van)` đếm tần suất mỗi từ trong đoạn văn, trả về dict.
+- Input: `"toi la toi ban la ban"`
+- Output: `{"toi":2, "la":2, "ban":2}`
+
+**Bài 9.5 (List, bonus):** Viết hàm `chia_mang_thanh_nhom(mang, k)` chia list thành các nhóm con kích thước k.
+- Input: `[1,2,3,4,5,6,7], k=3`
+- Output: `[[1,2,3],[4,5,6],[7]]`
+
+---
+
+## NGÀY 10 — String + List + Function
+
+**Bài 10.1 (String):** Viết hàm `ma_hoa_caesar(chuoi, shift)` mã hóa Caesar cipher.
+- Input: `"abc", 3`
+- Output: `"def"`
+
+**Bài 10.2 (List):** Viết hàm `tim_cap_tong_bang(mang, target)` tìm cặp số có tổng bằng target, trả về list các cặp.
+- Input: `[2,4,3,5,7], target=7`
+- Output: `[(2,5),(4,3)]`
+
+**Bài 10.3 (Function):** Viết hàm đệ quy `tong_chu_so(n)` tính tổng các chữ số của n.
+- Input: `12345`
+- Output: `15`
+
+**Bài 10.4 (String + Dict):** Viết hàm `nhom_anagram(ds_tu)` nhóm các từ là anagram của nhau vào cùng nhóm.
+- Input: `["eat","tea","tan","ate","nat","bat"]`
+- Output: `[["eat","tea","ate"], ["tan","nat"], ["bat"]]`
+
+**Bài 10.5 (List, bonus):** Viết hàm `mang_con_lien_tiep_tong_lon_nhat(mang)` tìm tổng lớn nhất của 1 dãy con liên tiếp (Kadane's algorithm).
+- Input: `[-2,1,-3,4,-1,2,1,-5,4]`
+- Output: `6`
+
+---
+
+## NGÀY 11 — OOP: Encapsulation (CHỈ 1 BÀI)
+
+**Bài 11.1:** Viết class `TaiKhoanNganHang` với thuộc tính `_so_du` (dùng 1 gạch dưới), method `nap_tien(so_tien)`, `rut_tien(so_tien)` (kiểm tra không rút quá số dư, nếu vượt thì `raise Exception("So du khong du")`), method `xem_so_du()` trả về số dư hiện tại.
+- Input: `tk = TaiKhoanNganHang(500000)`, `tk.rut_tien(700000)`
+- Output: raise `Exception("So du khong du")`
+
+---
+
+## NGÀY 12 — File I/O + Dict + String
+
+**Bài 12.1 (File I/O):** Viết chương trình đọc file `sv.txt` (format `ten,diem` mỗi dòng), tìm sinh viên có điểm cao nhất, in ra `"ten - diem"`.
+- Input file:
+```
+An,7
+Binh,9.5
+Chi,8
+```
+- Output: `"Binh - 9.5"`
+
+**Bài 12.2 (Dict):** Viết hàm `loc_dict_theo_dieu_kien(d, nguong)` trả về dict mới chỉ giữ các cặp key-value có value > nguong.
+- Input: `{"a":5,"b":10,"c":2}, nguong=4`
+- Output: `{"a":5,"b":10}`
+
+**Bài 12.3 (String):** Viết hàm `kiem_tra_chuoi_can_bang_ngoac(chuoi)` kiểm tra chuỗi ngoặc `()[]{}` có cân bằng không (dùng list làm stack).
+- Input: `"({[]})"`
+- Output: `True`
+
+**Bài 12.4 (Function):** Viết hàm `so_hoan_hao(n)` kiểm tra n có phải số hoàn hảo không (tổng ước số bằng chính nó).
+- Input: `28`
+- Output: `True` (1+2+4+7+14=28)
+
+**Bài 12.5 (List, bonus):** Viết hàm `xoa_phan_tu_trung(mang)` xóa phần tử trùng mà vẫn giữ thứ tự xuất hiện đầu tiên (không dùng `set()`).
+- Input: `[1,3,2,3,1,5]`
+- Output: `[1,3,2,5]`
+
+---
+
+## NGÀY 13 — List + Dict + Exception
+
+**Bài 13.1 (List):** Viết hàm `sap_xep_chen(mang)` tự cài đặt thuật toán Insertion Sort (không dùng `sort()`).
+- Input: `[5,2,9,1,5,6]`
+- Output: `[1,2,5,5,6,9]`
+
+**Bài 13.2 (Dict + Exception):** Viết hàm `lay_gia_tri_an_toan(d, key)` trả về giá trị của key, nếu không tồn tại bắt `KeyError` và trả về `"Khong tim thay"`.
+- Input: `{"a":1}, key="b"`
+- Output: `"Khong tim thay"`
+
+**Bài 13.3 (Function):** Viết hàm `kiem_tra_so_chinh_phuong(n)` kiểm tra n có phải số chính phương không.
+- Input: `16`
+- Output: `True`
+
+**Bài 13.4 (String):** Viết hàm `tim_ky_tu_khong_lap(chuoi)` trả về ký tự đầu tiên không lặp lại trong chuỗi.
+- Input: `"swiss"`
+- Output: `"w"`
+
+**Bài 13.5 (List, bonus):** Viết hàm `tim_phan_tu_thieu(mang, n)` cho mảng chứa n-1 số từ 1 đến n (thiếu 1 số), tìm số bị thiếu không dùng vòng lặp lồng.
+- Input: `[1,2,4,5], n=5`
+- Output: `3`
+
+---
+
+## NGÀY 14 — OOP: Polymorphism + Abstraction (CHỈ 1 BÀI)
+
+**Bài 14.1:** Viết abstract class `HinhHoc` (dùng `ABC`, `abstractmethod`) với method trừu tượng `tinh_dien_tich()`. Viết 2 class con `HinhTron(ban_kinh)` và `HinhVuong(canh)` implement method này. Viết hàm `tong_dien_tich(ds_hinh)` nhận list các hình (bất kể loại nào), trả về tổng diện tích — thể hiện tính đa hình.
+- Input: `[HinhTron(2), HinhVuong(3)]`
+- Output: `tổng ≈ 21.57` (12.57 + 9)
+
+---
+
+## NGÀY 15 — TỔNG HỢP TOÀN BỘ (List + Dict + String + File I/O + Exception + OOP nhẹ)
+
+**Bài 15.1 (List + Dict):** Viết hàm `thong_ke_diem(ds_sv)` nhận list dict `{"ten":..,"diem":..}`, trả về dict thống kê `{"cao_nhat":.., "thap_nhat":.., "trung_binh":..}`.
+
+**Bài 15.2 (File I/O + Exception):** Viết chương trình đọc file `sv.txt`, nếu file lỗi/không tồn tại thì thông báo, nếu đọc được thì ghi ra file `bao_cao.txt` kết quả thống kê từ Bài 15.1.
+
+**Bài 15.3 (String):** Viết hàm `lam_sach_chuoi(chuoi)` xóa khoảng trắng thừa, viết hoa chữ đầu câu, xóa ký tự đặc biệt không cần thiết.
+
+**Bài 15.4 (OOP nhẹ):** Viết class `QuanLySinhVien` có method `them_sv(ten, diem)`, `xoa_sv(ten)`, `tim_sv_diem_cao_nhat()` — dùng list các dict hoặc list object bên trong class.
+
+**Bài 15.5 (Tổng hợp):** Kết hợp Bài 15.1 + 15.2 + 15.4: dùng class `QuanLySinhVien` để đọc từ file, thống kê, và ghi báo cáo ra file khác — giống phiên bản mini của Bài 15 cũ nhưng gọn hơn.
+
+---
+
+## GHI CHÚ
+- Không cần làm hết mỗi ngày, làm được bao nhiêu hay bấy nhiêu.
+- Không hiểu chỗ nào cứ hỏi thẳng, không cần đợi hết cả ngày.
+- Ngày nào mệt/bận thi bằng lái, học tiếng Anh thì skip, quay lại sau vẫn được — không cần theo đúng thứ tự ngày.

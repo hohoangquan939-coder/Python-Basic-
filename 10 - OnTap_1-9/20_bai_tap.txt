@@ -1,0 +1,418 @@
+# BỘ 20 BÀI TẬP ÔN TẬP PYTHON
+### Phạm vi: Nhập/xuất, If-elif-else, For-while, List, Dict, Function, String, File I/O, Try-Except
+
+---
+
+## Bài 1 — Phân loại số
+
+**Đề bài:** Nhập vào 1 số nguyên `n`. In ra số đó là số dương, số âm, hay số 0. Nếu là số dương, in thêm số đó là chẵn hay lẻ.
+
+**Input:**
+```
+Nhap n: 8
+```
+
+**Output:**
+```
+So duong
+So chan
+```
+
+**Input:**
+```
+Nhap n: -5
+```
+
+**Output:**
+```
+So am
+```
+
+---
+
+## Bài 2 — Giải phương trình bậc nhất
+
+**Đề bài:** Nhập 2 số thực `a`, `b` của phương trình `ax + b = 0`. Giải và in ra nghiệm.
+- Nếu `a == 0` và `b == 0`: in `"Phuong trinh vo so nghiem"`
+- Nếu `a == 0` và `b != 0`: in `"Phuong trinh vo nghiem"`
+- Ngược lại: in nghiệm `x = -b/a` (làm tròn 2 chữ số thập phân)
+
+**Input:**
+```
+Nhap a: 2
+Nhap b: -10
+```
+
+**Output:**
+```
+Nghiem: x = 5.0
+```
+
+---
+
+## Bài 3 — Tổng các số trong khoảng
+
+**Đề bài:** Nhập 2 số nguyên `a`, `b` (`a <= b`). Tính tổng tất cả số nguyên trong khoảng `[a, b]` chia hết cho 3 hoặc 5.
+
+**Input:**
+```
+Nhap a: 1
+Nhap b: 15
+```
+
+**Output:**
+```
+Tong cac so chia het cho 3 hoac 5: 60
+```
+*(3,5,6,9,10,12,15 → tổng = 60)*
+
+---
+
+## Bài 4 — Đếm số nguyên tố trong khoảng
+
+**Đề bài:** Nhập 2 số nguyên `a`, `b`. In ra danh sách và số lượng số nguyên tố trong khoảng `[a, b]`.
+
+**Input:**
+```
+Nhap a: 1
+Nhap b: 20
+```
+
+**Output:**
+```
+Cac so nguyen to: [2, 3, 5, 7, 11, 13, 17, 19]
+So luong: 8
+```
+
+---
+
+## Bài 5 — Bảng cửu chương tuỳ chọn
+
+**Đề bài:** Nhập số nguyên `n` (2 ≤ n ≤ 9). In ra bảng cửu chương của `n` từ 1 đến 10, chỉ in các dòng có kết quả là số chẵn.
+
+**Input:**
+```
+Nhap n: 3
+```
+
+**Output:**
+```
+3 x 2 = 6
+3 x 4 = 12
+3 x 6 = 18
+3 x 8 = 24
+3 x 10 = 30
+```
+
+---
+
+## Bài 6 — Tìm số lớn nhất và vị trí
+
+**Đề bài:** Cho list `numbers` có sẵn trong code: `[12, 45, 7, 89, 23, 56, 3]`. Viết function `tim_max(lst)` trả về **giá trị lớn nhất** và **vị trí (index)** của nó trong list, không dùng `max()` có sẵn.
+
+**Input:** Không có (list cho sẵn trong code)
+
+**Output:**
+```
+Gia tri lon nhat: 89
+Vi tri: 3
+```
+
+---
+
+## Bài 7 — Đảo ngược danh sách thủ công
+
+**Đề bài:** Nhập vào 1 dãy số nguyên cách nhau bởi khoảng trắng. Viết function `dao_nguoc(lst)` trả về list đã đảo ngược thứ tự, **không dùng** `reverse()` hoặc `[::-1]`.
+
+**Input:**
+```
+Nhap day so: 1 2 3 4 5
+```
+
+**Output:**
+```
+Day sau khi dao nguoc: [5, 4, 3, 2, 1]
+```
+
+---
+
+## Bài 8 — Loại bỏ phần tử trùng lặp
+
+**Đề bài:** Nhập vào 1 dãy số nguyên. Viết function `loc_trung(lst)` trả về list đã loại bỏ các giá trị trùng lặp, giữ nguyên thứ tự xuất hiện đầu tiên, **không dùng** `set()`.
+
+**Input:**
+```
+Nhap day so: 1 2 2 3 4 4 4 5 1
+```
+
+**Output:**
+```
+Day sau khi loc trung: [1, 2, 3, 4, 5]
+```
+
+---
+
+## Bài 9 — Quản lý điểm sinh viên (Dict)
+
+**Đề bài:** Cho dict `sinh_vien` có sẵn:
+```python
+sinh_vien = {"name": "Tran Van A", "toan": 8.5, "ly": 7.0, "hoa": 9.0}
+```
+Viết function `diem_trung_binh(sv)` tính điểm trung bình 3 môn (làm tròn 2 chữ số), rồi in kết quả kèm xếp loại:
+- `>= 8.0`: "Gioi", `>= 6.5`: "Kha", `>= 5.0`: "Trung binh", còn lại: "Yeu"
+
+**Input:** Không có (dict cho sẵn)
+
+**Output:**
+```
+Sinh vien: Tran Van A
+Diem trung binh: 8.17
+Xep loai: Gioi
+```
+
+---
+
+## Bài 10 — Tìm kiếm trong danh sách Dict
+
+**Đề bài:** Cho list `products` có sẵn:
+```python
+products = [
+    {"name": "Ban phim", "price": 250000},
+    {"name": "Chuot", "price": 150000},
+    {"name": "Man hinh", "price": 2500000},
+    {"name": "Tai nghe", "price": 350000}
+]
+```
+Nhập vào mức giá `limit`. Viết function `loc_gia(lst, limit)` trả về list tên các sản phẩm có giá **nhỏ hơn hoặc bằng** `limit`.
+
+**Input:**
+```
+Nhap muc gia toi da: 300000
+```
+
+**Output:**
+```
+San pham phu hop: ['Ban phim', 'Chuot']
+```
+
+---
+
+## Bài 11 — Đếm tần suất từ trong câu (String + Dict)
+
+**Đề bài:** Nhập vào 1 câu văn bản. Viết function `dem_tu(s)` trả về dict đếm số lần xuất hiện của mỗi từ (không phân biệt hoa thường).
+
+**Input:**
+```
+Nhap cau: Con meo ngoi tren con meo khac
+```
+
+**Output:**
+```
+{'con': 2, 'meo': 2, 'ngoi': 1, 'tren': 1, 'khac': 1}
+```
+
+---
+
+## Bài 12 — Kiểm tra chuỗi đối xứng (Palindrome)
+
+**Đề bài:** Nhập vào 1 chuỗi. Viết function `la_doi_xung(s)` kiểm tra chuỗi đó có đối xứng không (đọc xuôi và đọc ngược giống nhau), **bỏ qua khoảng trắng và không phân biệt hoa thường**.
+
+**Input:**
+```
+Nhap chuoi: Madam I m Adam
+```
+
+**Output:**
+```
+Chuoi doi xung: True
+```
+
+---
+
+## Bài 13 — Mã hoá Caesar đơn giản
+
+**Đề bài:** Nhập vào 1 chuỗi chỉ gồm chữ thường và khoảng trắng, 
+và 1 số nguyên `k` (1-25). 
+Viết function `ma_hoa(s, k)` dịch mỗi chữ cái đi `k` vị trí 
+trong bảng chữ cái (vòng lại từ đầu nếu vượt quá 'z'). Khoảng trắng giữ nguyên.
+
+**Input:**
+```
+Nhap chuoi: hello world
+Nhap k: 3
+```
+
+**Output:**
+```
+Chuoi ma hoa: khoor zruog
+```
+
+---
+
+## Bài 14 — Thống kê ký tự trong chuỗi
+
+**Đề bài:** Nhập vào 1 chuỗi bất kỳ. In ra: số lượng chữ cái, số lượng số, số lượng khoảng trắng, số lượng ký tự đặc biệt khác.
+
+**Input:**
+```
+Nhap chuoi: Hello World 123 !!!
+```
+
+**Output:**
+```
+So chu cai: 10
+So so: 3
+So khoang trang: 3
+So ky tu dac biet: 3
+```
+
+---
+
+## Bài 15 — Quản lý sổ liên lạc với File
+
+**Đề bài:** Viết chương trình cho phép nhập tên và số điện thoại từ bàn phím (nhập liên tục, gõ "stop" ở phần tên để dừng), ghi từng dòng vào file `lienlac.txt` theo định dạng `Ten - SDT`. Sau đó đọc lại toàn bộ file và in ra màn hình kèm số thứ tự.
+
+**Input:**
+```
+Nhap ten (hoac 'stop' de dung): An
+Nhap SDT: 0901234567
+Nhap ten (hoac 'stop' de dung): Binh
+Nhap SDT: 0907654321
+Nhap ten (hoac 'stop' de dung): stop
+```
+
+**Output:**
+```
+Da luu vao file!
+
+--- DANH BA ---
+1. An - 0901234567
+2. Binh - 0907654321
+```
+
+---
+
+## Bài 16 — Đếm số dòng và từ trong File
+
+**Đề bài:** Cho file `data.txt` có sẵn nội dung (tự tạo file trước khi chạy). Viết chương trình đọc file, in ra: số dòng, tổng số từ, và dòng dài nhất (nhiều ký tự nhất).
+
+**Input:** File `data.txt` chứa:
+```
+Toi dang hoc Python
+Python rat thu vi
+Hoc de co viec lam tot
+```
+
+**Output:**
+```
+So dong: 3
+Tong so tu: 14
+Dong dai nhat: Hoc de co viec lam tot
+```
+
+---
+
+## Bài 17 — Xử lý lỗi khi nhập số
+
+**Đề bài:** Viết chương trình nhập liên tục các số nguyên từ bàn phím (gõ "done" để kết thúc), tính tổng các số hợp lệ. Nếu nhập sai kiểu (không phải số), in ra `"Loi: khong phai la so, vui long nhap lai!"` và tiếp tục nhập, không dừng chương trình.
+
+**Input:**
+```
+Nhap so (hoac 'done' de dung): 5
+Nhap so (hoac 'done' de dung): abc
+Nhap so (hoac 'done' de dung): 10
+Nhap so (hoac 'done' de dung): done
+```
+
+**Output:**
+```
+Loi: khong phai la so, vui long nhap lai!
+Tong cac so da nhap: 15
+```
+
+---
+
+## Bài 18 — Máy tính chia an toàn
+
+**Đề bài:** Viết function `chia_an_toan(a, b)` thực hiện phép chia `a/b` có xử lý lỗi:
+- Nếu `b == 0`: trả về chuỗi `"Khong the chia cho 0"`
+- Nếu `a` hoặc `b` không phải số (truyền vào kiểu khác): trả về chuỗi `"Du lieu khong hop le"`
+- Ngược lại: trả về kết quả phép chia (làm tròn 2 chữ số)
+
+Test với 3 trường hợp: `chia_an_toan(10, 2)`, `chia_an_toan(5, 0)`, `chia_an_toan(10, "a")`
+
+**Input:** Không có (test case cho sẵn)
+
+**Output:**
+```
+10 / 2 = 5.0
+5 / 0 = Khong the chia cho 0
+10 / a = Du lieu khong hop le
+```
+
+---
+
+## Bài 19 — Quản lý kho hàng tổng hợp
+
+**Đề bài:** Cho list `kho` có sẵn:
+```python
+kho = [
+    {"ten": "Gao", "soluong": 50, "gia": 15000},
+    {"ten": "Duong", "soluong": 0, "gia": 20000},
+    {"ten": "Muoi", "soluong": 30, "gia": 5000}
+]
+```
+Viết chương trình:
+1. Function `tong_gia_tri(kho)` — tính tổng giá trị toàn bộ kho (số lượng × giá)
+2. Function `hang_het(kho)` — trả về list tên các mặt hàng có `soluong == 0`
+3. In tổng giá trị kho và danh sách hàng hết, ghi danh sách hàng hết vào file `het_hang.txt`
+
+**Input:** Không có (list cho sẵn)
+
+**Output:**
+```
+Tong gia tri kho: 1050000
+Hang het: ['Duong']
+Da ghi vao file het_hang.txt
+```
+
+---
+
+## Bài 20 — Chương trình tổng hợp: Quản lý điểm thi có lưu file
+
+**Đề bài:** Viết chương trình hoàn chỉnh:
+1. Cho người dùng nhập liên tục: tên sinh viên và điểm thi (gõ "end" ở tên để dừng)
+2. Xử lý lỗi nếu điểm nhập không phải số (yêu cầu nhập lại điểm đó)
+3. Xử lý lỗi nếu điểm ngoài khoảng 0-10 (yêu cầu nhập lại)
+4. Sau khi nhập xong, tính điểm trung bình cả lớp
+5. Phân loại từng sinh viên: `>=8`: Gioi, `>=6.5`: Kha, `>=5`: Trung binh, còn lại: Yeu
+6. Ghi toàn bộ kết quả (tên, điểm, xếp loại) vào file `ketqua.txt`
+7. In ra sinh viên có điểm cao nhất
+
+**Input:**
+```
+Nhap ten (hoac 'end'): An
+Nhap diem: 8.5
+Nhap ten (hoac 'end'): Binh
+Nhap diem: abc
+Loi: diem phai la so!
+Nhap diem: 15
+Loi: diem phai trong khoang 0-10!
+Nhap diem: 6.0
+Nhap ten (hoac 'end'): end
+```
+
+**Output:**
+```
+Diem trung binh ca lop: 7.25
+Da ghi ket qua vao file ketqua.txt
+Sinh vien cao nhat: An - 8.5 diem - Gioi
+```
+
+---
+
+### Ghi chú:
+- Làm theo thứ tự từ dễ đến khó
+- Bài 15, 16, 19, 20 cần dùng File I/O
+- Bài 17, 18, 20 cần dùng Try-Except
+- Không cần làm hết 1 lúc, làm xong bài nào gửi lên để kiểm tra ngay

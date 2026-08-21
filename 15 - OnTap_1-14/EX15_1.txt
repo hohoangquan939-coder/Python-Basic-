@@ -1,0 +1,3 @@
+Ten: MMi - Tuoi: 2.0 - Loai thuc an: Thit - Luong thuc an: 3.0
+Ten: 3 - Tuoi: 2.0 - Loai thuc an: Thuc vat - Luong thuc an: 3.0
+Ten: mooi - Tuoi: 12.0 - Loai thuc an: Thuc vat - Luong thuc an: 1.0

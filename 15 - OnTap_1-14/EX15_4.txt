@@ -1,0 +1,37 @@
+Ten nha hang: Quan An Vat
+Menu quan
+----------------------------------------------------------------------
+Mon an
+----------------------------------------------------------------------
+Ten mon: Mi cay              - Cay                   - Gia: 50000     
+Ten mon: Ga ran              - Cay                   - Gia: 55000     
+Ten mon: Com chien           - Khong cay             - Gia: 45000     
+Ten mon: Mi xao              - Cay                   - Gia: 45000     
+Ten mon: Pho bo              - Khong cay             - Gia: 55000     
+Ten mon: Pizza               - Cay                   - Gia: 125000    
+Ten mon: Xuc xich            - Khong cay             - Gia: 15000     
+Ten mon: Ca vien chien       - Cay                   - Gia: 30000     
+----------------------------------------------------------------------
+Do uong
+----------------------------------------------------------------------
+Ten do uong: Coca            - Size: S               - Gia: 15000     
+Ten do uong: Pepsi           - Size: M               - Gia: 20000     
+Ten do uong: Tra dao         - Size: L               - Gia: 40000     
+Ten do uong: Tra sua         - Size: M               - Gia: 35000     
+Ten do uong: Cam ep          - Size: L               - Gia: 50000     
+----------------------------------------------------------------------
+Combo
+----------------------------------------------------------------------
+Ten combo: Combo 1
+Ten mon: Ga ran              - Cay                   - Gia: 55000     
+Ten mon: Com chien           - Khong cay             - Gia: 45000     
+Ten do uong: Tra dao         - Size: L               - Gia: 40000     
+Tong gia tien cua combo (Giam gia 15%): 119000.0
+
+Ten combo: Combo 2
+Ten mon: Com chien           - Khong cay             - Gia: 45000     
+Ten mon: Mi xao              - Cay                   - Gia: 45000     
+Ten mon: Pizza               - Cay                   - Gia: 125000    
+Ten do uong: Coca            - Size: S               - Gia: 15000     
+Tong gia tien cua combo (Giam gia 15%): 195500.0
+

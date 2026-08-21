@@ -1,0 +1,16 @@
+Ten ngan hang: Agribank
+---------------------------------------
+Danh sach: Tai khoan tiet kiem
+---------------------------------------
+Chu tai khoan: Quan                 - So tai khoan: 34248798798     - So du: 2100000.0      
+Chu tai khoan: Nhi                  - So tai khoan: 34248798797     - So du: 4200000.0      
+Chu tai khoan: Hoang                - So tai khoan: 34248798796     - So du: 5250000.0      
+Chu tai khoan: Tuan                 - So tai khoan: 34248798790     - So du: 582750.0       
+---------------------------------------
+Danh sach: Tai khoan giao dich
+---------------------------------------
+Chu tai khoan: Hung                 - So tai khoan: 44248798798     - So du: 3030000.0      
+Chu tai khoan: An                   - So tai khoan: 54248798798     - So du: 15150000.0     
+Chu tai khoan: Bac                  - So tai khoan: 64248798798     - So du: 90900000.0     
+Chu tai khoan: Xuan                 - So tai khoan: 74248798798     - So du: 20007988.9     
+Chu tai khoan: Vuong                - So tai khoan: 84248798798     - So du: 21210000.0     

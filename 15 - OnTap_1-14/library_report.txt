@@ -1,0 +1,16 @@
+Thu vien: Thu Vien Trung Tam
+====================================================================
+SACH (3)
+- Harry Potter         | J.K Rowling          | Dang muon 
+- Dac Nhan Tam         | Dale Carnegie        | Con trong 
+- Clean Code           | Robert Martin        | Con trong 
+====================================================================
+DVD (2)
+- Harry Potter         | J.K Rowling          | Dang muon 
+- Dac Nhan Tam         | Dale Carnegie        | Con trong 
+- Clean Code           | Robert Martin        | Con trong 
+====================================================================
+TAP CHI (2)
+- Harry Potter         | J.K Rowling          | Dang muon 
+- Dac Nhan Tam         | Dale Carnegie        | Con trong 
+- Clean Code           | Robert Martin        | Con trong 

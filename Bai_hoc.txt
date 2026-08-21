@@ -1,0 +1,14 @@
+b1 : Nhap xuat
+b2 : Dieu kien if-elif-else
+b3 : Vong lap for-while
+b4 : Mang
+b5 : Struct
+b6 : Ham
+b7 : String
+b8 : Tao file, hoc doc - ghi File
+b9 : Try - Except
+b10: On tap 1-9
+b11: OOP_Basic
+b12: Inheritance
+b13: Encapslution
+b14: Polymorphism + Abstraction

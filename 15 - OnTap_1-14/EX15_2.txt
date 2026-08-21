@@ -1,0 +1,11 @@
+Ten cua hang: Yeah
+Loai xe: O to       - Brand: Toyota     - Model: Vios            - Rental price per day: 500000    
+Loai xe: O to       - Brand: Honda      - Model: Civic           - Rental price per day: 650000    
+Loai xe: O to       - Brand: Hyundai    - Model: Accent          - Rental price per day: 450000    
+Loai xe: O to       - Brand: Mazda      - Model: CX-5            - Rental price per day: 900000    
+Loai xe: Xe may     - Brand: Honda      - Model: Wave Alpha      - Rental price per day: 100000    
+Loai xe: Xe may     - Brand: Yamaha     - Model: Exciter 155     - Rental price per day: 180000    
+Loai xe: Xe may     - Brand: Suzuki     - Model: Raider          - Rental price per day: 170000    
+Loai xe: Xe tai     - Brand: Hino       - Model: 300             - Rental price per day: 1200000   
+Loai xe: Xe tai     - Brand: Isuzu      - Model: NQR75           - Rental price per day: 1500000   
+Loai xe: Xe tai     - Brand: Hyundai    - Model: Mighty          - Rental price per day: 1800000   
