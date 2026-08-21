@@ -24,8 +24,7 @@ def div(a, b):
 
 
 def tinhtien(a, b):
-    return a * b * 0.1
-
+    return a * b
 
 def tinhgiaithua(n):
     if n < 0:
