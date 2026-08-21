@@ -8,5 +8,7 @@ def main():
     print(f"I really enjoy learning coding")
     print(f"I hope you have a great day!")
 
+def sum(a, b):
+    return a + b
 
 main()
