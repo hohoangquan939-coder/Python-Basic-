@@ -12,7 +12,9 @@ def chay():
     print(f"Chay")
 
 def main():
-    chiendau()
     tancong()
+    phongthu()
+    nghingoi()
+    chay()
 
 main()
