@@ -1,13 +1,15 @@
+Dragon Information
 
-hello 
-minh la dark dragon day 
+Name: Dark Dragon
+Type: Legendary Creature
+Element: Fire and Shadow
+Age: 500 years old
+Strength: Extremely powerful
+Ability: Can control flames and create massive explosions
+Habitat: Ancient mountains and dark caves
+Personality: Fierce, intelligent, and independent
 
-
-
-
-
-minh se la 1 con rong hac am
-min co the phun ra lua 
-
-
-
+Description:
+The Dark Dragon is a legendary creature known for its incredible power and mysterious origins. 
+It protects ancient lands and uses its fire abilities to defeat enemies. 
+Although it looks dangerous, it is a wise creature that only attacks when threatened.
